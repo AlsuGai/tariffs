@@ -1,4 +1,4 @@
-export default function Container(props) {
+export default function Container() {
     return (
         <div className="content">
         <div className="container">
