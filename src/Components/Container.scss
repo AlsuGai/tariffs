@@ -35,7 +35,7 @@ p {
         color: $colorWhite;
         font-size: 30px;
         font-weight: 500;
-
+        background: black;
     }
 
     &__price {
@@ -45,7 +45,6 @@ p {
         display: flex;
         position: relative;
         justify-content: center;
-        background-color: rgb(10, 162, 232);
         border-left: $border;
         border-right: $border;
     }
@@ -67,6 +66,8 @@ p {
     &__speed {
         padding: 30px 0;
         font-size: 18px;
+        border-left: $border;
+        border-left: $border;
     }
 
     &__info {
@@ -74,40 +75,27 @@ p {
         font-size: 18px;
         background-color: rgb(173, 173, 173);
         line-height: 30px;
+        border-left: $border;
+        border-left: $border;
     }
 }
 
-.color-dark-blue {
-    background-color: rgb(11, 133, 190);
-}
-
-.color-blue {
+.blue {
     background-color: rgb(10, 162, 232);
 }
 
 
-.color-dark-green {
+.green {
     background-color: rgb(2, 101, 2);
 }
 
-.color-green {
-    background-color: rgb(3, 132, 3);
+.red {
+    background-color: rgba(221, 42, 42, 0.859);
+    padding: 37px 0;
+    
 }
 
-.color-dark-red {
-    background-color: rgba(160, 0, 0, 0.859);
-    padding: 27px;
-}
-
-.color-red {
-    background-color: rgba(221, 42, 42, 0.859)
-}
-
-.color-dark-black {
-    background-color: rgba(6, 5, 5, 0.812);
-}
-
-.color-black {
+.black {
     background-color: rgba(6, 5, 5, 0.752);
 }
 
