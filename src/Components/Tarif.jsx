@@ -1,7 +1,15 @@
-
+import { useState } from "react";
 
 export default function Tarif({tarif}) {
     const {name, price, speed, color, id} = tarif;
+    const [tarifName, setTarifName] = useState('');
+
+    const tarifNameClick = () => {
+        setTarifName(
+            console.log(`Выбран ${name}`)
+        )
+    }
+    
     let nameClass = [
         'container__name',
         color
@@ -19,6 +27,7 @@ export default function Tarif({tarif}) {
         containerClass.push('tarif550')
     }
     return (
+        <>
         <div className={containerClass.join(' ')}> 
             <p className={nameClass}>{name}</p>
             <div className={priceClass}>
@@ -27,8 +36,10 @@ export default function Tarif({tarif}) {
             </div>
             <div className="container__speed">до {speed} Мбит/сек</div>
             <div className="container__info">Объем включенного <p>трафика не ограничен</p></div>
+            <button onClick={tarifNameClick}>Выбрать</button>
         </div>
+        {tarifName}
+         </>
+         
     )
-
-   
 }
